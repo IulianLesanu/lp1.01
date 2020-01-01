@@ -1,0 +1,269 @@
+*,*:after,*:before {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+body {
+    margin: o;
+    background: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: black;
+    line-height: 1.5;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url("../img/asq1.jpg") center no-repeat;
+    -webkit-backdrop-size: cover;
+    background-size: cover;
+}
+
+.introtitle {
+    font-size: 150px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.subtitle {
+    font-size: 75px;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+}
+
+.introinner {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+
+.header {
+    padding-top: 30px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.nav {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.navlink {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px 0;
+    color: white;
+    text-decoration: none;
+    transition: color 0.1s linear;
+    position: relative;
+
+}
+.navlink:after {
+    content:"";
+    display: block;
+    width: 100%;
+    height: 3px;
+    opacity: 0;
+    transition: 0.1s, linear;
+
+    background-color: rgb(168, 123, 38);
+    
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+.navlink:hover {
+    color: rgb(168, 123, 38);
+}
+
+.navlink:hover:after {
+    display: block;
+    opacity: 1;
+
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    display: inline;
+    vertical-align: top;
+    padding:10px 30px;
+    border: 3px solid white;
+    color:white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.1s linear,color 0.1s linear;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section__header {
+    width: 100%;
+    min-width: 900px;
+    margin: 0 auto 40px;
+    margin-bottom: 50px;
+
+    text-align: center;
+}
+
+.section__subtitle {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    color: rgb(51, 51, 51);
+}
+
+.section__title {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+}
+
+.section__title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: rgb(148, 64, 64);
+    margin: 30px auto ;
+}
+
+.section__text {
+    color: rgb(153, 153, 153);
+    font-size: 15px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__item {
+    background-color: rgb(47, 96, 124); 
+    width: 380px;
+    position: relative;
+}
+
+.about__item:hover .about__img img {
+    opacity: 0.3;
+
+    
+}
+
+.about__item:hover .about__img {
+    transform: translate3d(-10px, -10px,0);
+}
+
+.about__item:hover .about__text {
+    opacity: 1;
+}
+.about__img {
+    background: linear-gradient( to bottom,
+    #f38181, #fce38a );
+    transition: transform 0.1s linear;
+}
+
+.about__img img {
+    display: block;
+    transition: opacity o.1s linear;
+}
+
+.about__text {
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transition: translate3d(0, -50, 0);
+    opacity: 0;
+    transition: opacity 0.1s linear;
+
+}
+
+
+.statistic {
+    background-color: rgb(36, 92, 129);
+}
+
+.stat {
+    display: flex;
+}
+
+.stat__item {
+    flex: 1 1 0;
+    border-left: 1px solid white;
+    text-align: center;
+    color: white;
+    padding: 70px 25px;
+}
+
+.stat__item:last-child {
+    border-right: 1px solid white;
+    
+}
+
+.stat__cound {
+    margin-bottom: 10px;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.stat__text {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
