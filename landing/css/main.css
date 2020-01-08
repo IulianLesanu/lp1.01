@@ -11,7 +11,7 @@ hr {
     background-color: rgb(122, 110, 110);
     width: 100%;
     height: 1px;
-    margin: 40px 0;
+    margin: 40px 0; 
 }
 body {
     margin: o;
@@ -24,7 +24,8 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1230px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -192,6 +193,7 @@ body {
 
 .about {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -221,6 +223,8 @@ body {
 }
 
 .about__img img {
+    max-width: 100%;
+    height: auto;
     display: block;
     transition: opacity o.1s linear;
 }
@@ -394,3 +398,82 @@ body {
     left: 15px;
     z-index: 1;
 }
+
+.galeryimg {
+    width: 720px;
+    height: auto;
+    outline: 5px solid black;
+}
+
+.foto-anime {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    grid-gap: 40px; 
+}
+
+.tabel-foto-anime {
+    width: 750px;
+    height: auto;
+}
+
+.flogo {
+    height: 100px;
+    width: auto;
+    outline: none;
+}
+
+@media (max-width:1230px) {
+    .subtitle {
+        font-size: 50px;
+    }
+    .introtitle {
+        font-size: 100px;
+    }
+}
+
+@media (max-width:900px) {
+    .subtitle {
+        font-size: 30px;
+    }
+    .introtitle {
+        font-size: 70px;
+    } 
+}
+@media (max-width:700px) {
+    .section {
+        padding: 40px;
+    }
+    .nav {
+        display: none;
+    }
+}
+
+
+@media (max-width:600px) {
+    .introtitle {
+        font-size: 40px;
+    }
+    .introtitle {
+        font-size: 40px;
+    } 
+    .section__subtitle {
+        font-size: 20px;
+    }
+    .section__subtitle {
+        font-size: 19px;
+    }
+    .section__title {
+        font-size: 24px;
+    }
+    .section__title:after {
+        margin: 20px auto;
+    }
+    .section__header {
+        margin-bottom: 50px;
+    }
+    .about__item {
+        width: 100%;
+    }
+}
+
