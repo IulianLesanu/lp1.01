@@ -1,5 +1,7 @@
 *,*:after,*:before {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -15,7 +17,7 @@ hr {
 }
 body {
     margin: o;
-    background: rgb(255, 255, 255);
+    background: rgb(87, 83, 83);
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     color: black;
@@ -88,7 +90,7 @@ body {
     display: inline-block;
     vertical-align: top;
     margin: 0 10px 0;
-    color: rgb(29, 48, 35);
+    color: white;
     text-decoration: none;
     transition: color 0.1s linear;
     position: relative;
@@ -332,8 +334,8 @@ body {
 }
 
 .wedo {
+    margin-top: 300px;
     display: flex;
-    padding: 300px;
     flex: column;
 
 }
@@ -401,22 +403,21 @@ body {
 }
 
 .galeryimg {
+    margin-top: 100px;
+    margin-left: 50px;
     width: 720px;
-    height: auto;
+    height: 480px;
     outline: 5px solid black;
 }
 
 .foto-anime {
-    display: grid;
-    padding: 100px;
+    display: flex;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
     grid-template-columns: auto auto;
     justify-content: center;
     grid-gap: 40px; 
-}
-
-.tabel-foto-anime {
-    width: 750px;
-    height: auto;
 }
 
 .flogo {
@@ -425,57 +426,124 @@ body {
     outline: none;
 }
 
-@media (max-width:1230px) {
-    .subtitle {
-        font-size: 50px;
-    }
+
+
+
+@media (max-width: 1230px) {
+
+
     .introtitle {
-        font-size: 100px;
+        font-size: 52px;
+    }
+
+    .subtitle {
+        font-size: 120px;
+    }
+
+}
+
+@media (max-width: 990px) {
+    .subtitle {
+        font-size: 32px;
+    }
+
+    .introtitle {
+        font-size: 80px;
+    }
+
+    .services__item {
+        width: 50%;
+        padding-bottom: 0;
+    }
+
+    .services__item--border {
+        border-bottom: 0;
+    }
+
+}
+
+@media (max-width: 770px) {
+    .nav {
+        display: none;
+    }
+
+    .section {
+        padding: 40px 0;
+    }
+
+    .about {
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+    .about__item {
+        width: 100%;
+        max-width: 410px;
+        margin-bottom: 30px;
+    }
+
+    .about__item:last-child {
+        margin-bottom: 0;
+    }
+
+    .services {
+        justify-content: center;
+    }
+
+    .services__item {
+        width: 100%;
+        max-width: 400px;
+        padding-left: 55px;
+        padding-right: 0;
+    }
+
+    .services__icon {
+        left: 0;
+    }
+
+    .wedo__item {
+        width: 100%;
     }
 }
 
-@media (max-width:900px) {
-    .subtitle {
-        font-size: 30px;
+
+@media (max-width: 575px) {
+    .suptitle {
+        font-size: 22px;
     }
+
     .introtitle {
-        font-size: 70px;
-    } 
-}
-@media (max-width:700px) {
-    .section {
-        padding: 40px;
+        font-size: 40px;
     }
-    .nav {
+
+    .section__header {
+        margin-bottom: 50px;
+    }
+
+    .section__subtitle {
+        font-size: 20px;
+    }
+
+    .section__title {
+        font-size: 24px;
+    }
+
+    .section__title:after {
+        margin: 20px auto;
+    }
+
+    .about__item {
+        width: 100%;
+
+        border-bottom: 1px solid #b5eae0;
+    }
+
+    .about__item:last-child {
+        border-bottom: 0;
+    }
+    section__text {
         display: none;
     }
 }
 
-
-@media (max-width:600px) {
-    .introtitle {
-        font-size: 40px;
-    }
-    .introtitle {
-        font-size: 40px;
-    } 
-    .section__subtitle {
-        font-size: 20px;
-    }
-    .section__subtitle {
-        font-size: 19px;
-    }
-    .section__title {
-        font-size: 24px;
-    }
-    .section__title:after {
-        margin: 20px auto;
-    }
-    .section__header {
-        margin-bottom: 50px;
-    }
-    .about__item {
-        width: 100%;
-    }
-}
 
